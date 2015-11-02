@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	font-family: 'Arial Black', Arial, sans-serif;
+}
+
+/*Ver elementos y contenedores
+* {
+	outline: 2px solid rgba(0,250,0,.5);
+}*/
+/*Fin Ver*/
+
+/*estilos generales*/
+a {
+	text-decoration: none;
+	color: black;
+}
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+	.list-inline li {
+	padding-right: 0.5em;
+	}
+.mayus {
+	text-transform: uppercase;
+}
+.negrita {
+	font-weight: bold;
+}
+.font-small {
+	font-size: 0.9em;
+}
+/*fin estilos generales*/
+
+/*Sección Header*/
+.header {
+	background-image: url('../img/grupal.jpg') ;
+	min-width: 960px;
+	height: 650px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+	.menu-nav ul {
+		float: right;
+	}	
+	.menu-nav li {
+		margin-top: 30px;
+		padding: 5px;
+	}
+	.clearfix:before, .clearfix:after {
+		content:" ";
+		display: table;
+	}
+	.clearfix:after{
+		clear:both;
+	}
+		.menu-nav a:hover {
+			border-bottom: 3px solid orange;
+			text-shadow:1px 1px 2px #fff;
+			font-weight: bold;
+		}
+	.logo {
+		display: block;
+		width: 40%;
+		margin: 0 auto;
+		transition: all 1s;
+	}
+		.logo:hover {
+			-webkit-transform: scale(1.1);
+			   -moz-transform: scale(1.1);
+			    -ms-transform: scale(1.1);
+			     -o-transform: scale(1.1);
+			        transform: scale(1.1);
+		}
+	.boton {
+		position:relative;
+		display: inline;
+		background-color: orangered; 
+		text-align: center;
+		padding: 10px 18px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		background: radial-gradient(peachpuff, orange, darkorange);
+	}
+	.boton:hover {
+		font-weight: bold;
+	}
+/*Fin sección Header*/
+
+/*Content*/
+.content {
+	margin: 50px 0;
+}
+	.galeria img {
+		width: 100%;
+		transition-duration: 1s;
+	}
+		.galeria img:hover {
+				transform: scale(0.9) rotate(-5deg);
+		}
+	.galeria p {
+		border-bottom: 2px solid black;
+	}
+		.galeria p:hover {
+			border-bottom: 3px solid orange;
+			text-shadow: 1px 1px 2px #aaa;
+		}
+/*Fin Content*/
+
+/*Footer*/
+.footer {
+	background: #333;
+	color: white;
+	padding: 1em 0;
+}
+.contacto li {
+	border-right: 1px solid white ;
+}
+.contacto li:last-child {
+	border-right: none;
+}
+/*Fin  Footer*/
